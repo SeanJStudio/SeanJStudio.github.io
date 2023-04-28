@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<!--
+		Author: Sean Johnson
+	!-->
+	<head>
+		<title>Proppy</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Sean Johnson">
+		<link type="text/css" rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link rel='icon' href='img/favicon.ico'>
+	</head>
+	<body class="fadeInUp-animation">
+		<nav class="navbar">
+			<a href="index.html">
+				<img id="logo" src="img/logo.png">
+			</a>
+	  	</nav>
+		<div id="wrapper">
+			<main>
+				<div class="block">
+					<div class="inner">
+						<h1> 
+							Proppy
+						</h1>
+					</div>
+				</div>
+				<div class="desc-img-wrapper">
+					<img class="desc-img" src="img/proppy.png">
+				</div>
+				<div class="desc-text-wrapper">
+					<p class="description">Proppy is a GUI-less scraping application I developed in Java, HTMLUnit and SQL Server to track
+						Canadian properties for sale everyday. By using a combination of rotating residential proxies, rotating user agents and 
+						randomization I am able to scrape a couple of the most popular property sites in Canada. Every day it automatically scrapes 
+						sites between random times for all the new properties and even accounts for daylight savings time so it can run unattended.
+						<br><br>
+						In order to properly track the properties it corrects addresses to Canada Post SERP standards and checks if 
+						the property has already been added within a 3 month period before adding it. These sites did not provide properties for Manitoba and just had a few for Quebec. 
+						I'm assuming this is because they pay for each realtor groups property listings and it doesn't make 
+						sense to buy them based on their target market. Below is a Tableau dashboard I made of properties listed for sale by average price between Dec 2022 - Feb 2023. 
+					</p>
+				</div>
+				<div class="tableau-wrapper">
+					<div class='tableauPlaceholder' id='viz1682559946606' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Canadianaveragepropertyprices&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Canadianaveragepropertyprices&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;Canadianaveragepropertyprices&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1682559946606');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.46)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='800px';} else { vizElement.style.width='100%';vizElement.style.height='800px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				</div>
+			</main>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<!--
+		Author: Sean Johnson
+	!-->
+	<head>
+		<title>PDFUtil</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Sean Johnson">
+		<link type="text/css" rel="stylesheet" href="css/normalize.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link rel='icon' href='img/favicon.ico'>
+	</head>
+	<body class="fadeInUp-animation">
+		<nav class="navbar">
+			<a href="index.html">
+				<img id="logo" src="img/logo.png">
+			</a>
+	  	</nav>
+		<div id="wrapper">
+			<main>
+				<div class="block">
+					<div class="inner">
+						<h1> 
+							PDFUtil
+						</h1>
+					</div>
+				</div>
+				<div class="desc-img-wrapper">
+					<iframe class="video" width="800" height="400" src="https://www.youtube.com/embed/8hwG-WBrqso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+				<div class="desc-text-wrapper">
+					<p class="description">I work with a lot of PDFs which made me develop this utility application. I wrote it in Java on top of the 
+						Apache PDFBox library. The coolest feature is the ability to extract text that is embedded or via Tess OCR. The video example
+						above shows how you can preview a PDF file and draw an area around the table you wish to extract to comma delimited data. 
+						<br><br>
+						Theres lots of ways it can manipulate PDFs but some of my favorite things are:
+					</p>
+					<ol>
+						<li>Extracting names and address blocks normalized into their separate components to comma delimited data.</li>
+						<li>Extracting tables to comma delimited data.</li>
+						<li>Find and replace text with Regex Patterns (way harder to do than I thought).</li>
+						<li>Interweave multiple PDFs and their pages together.</li>
+						<li>Decrypt a PDF.</li>
+						</ol>
+				</div>
+			</main>
+		</div>
+
+	</body>
+</html>

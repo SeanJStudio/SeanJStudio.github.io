@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Grotesk:wght@300;700&display=swap');
-
 ::selection {
    color: rgb(0, 0, 0);
    background: white;
@@ -28,16 +26,16 @@
 }
 
 main {
-  padding: 0 0 100px 0;
+  padding: 0 0 40px 0;
 }
 
 h1{
   margin: 0;
-  font-size:32px;
+  font-size:2em;
 }
 
 hr{
-  opacity: 0.4;
+  
   margin: 0;
 }
 
@@ -60,7 +58,7 @@ a {
   padding:0;
   margin-left: 60px;
   display: block;
-  color: #4d5156;
+  color: #979797;
   font-weight: 900;
   font-size: 1.6em;
   letter-spacing: -0.06ch;
@@ -72,34 +70,36 @@ a {
   margin: 0 auto;
   text-align: left;
   letter-spacing: 0.01ch;
-  line-height: 1.75;
+  line-height: 1.6;
   font-size: 1.25em;
-  padding-bottom: 100px;
+  padding: 0 0px 40px 0;
 }
 
 ol li{
   margin-bottom: 24px;
+  padding-right: 40px;
 }
 
 .tableau-wrapper{
   margin: 0 auto;
-  padding: 0 60px 100px 60px;
+  padding: 0 60px 40px 60px;
 }
 
 .desc-img-wrapper{
   margin: 0 auto;
-  padding: 40px 60px 100px 60px;
+  padding: 40px 60px 40px 60px;
   max-width: 1200px;
   display:flex;
   flex-wrap: wrap;
 }
 
 .desc-img{
-  width: 100%
+  width: 100%;
+  border: 1px solid white;
 }
 
 .desc-img:not(:first-child):not(:last-child) {
-  padding: 80px 0;
+  margin: 80px 0;
 }
 
 .video {
@@ -125,7 +125,7 @@ ol li{
   margin: 0 auto;
   padding: 0 60px;
   text-align: center;
-  height: 30vh;
+  height: 10vh;
 }
 
  .highlight{
@@ -158,11 +158,12 @@ ol li{
      position: relative;
      color: white;
      text-decoration: none;
-     border: 1px solid rgba(255, 255, 255, 0);
+     border: 1px solid white;
+
 }
 
 .portfolio-item:hover {
-  border: 1px solid rgba(255, 255, 255, 1);
+
   transform: translateY(-4px);
   transform: scale(1.05);
 }
@@ -198,14 +199,14 @@ ol li{
 }
 
  .one::before {
-     border: 1px solid white;
+     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     opacity: 0.4;
+     
      z-index: -1;
      background:url('../img/UGMfold3.png') center center no-repeat;;
      background-size: cover;
@@ -213,18 +214,18 @@ ol li{
 }
 
  .one:hover::before {
-     opacity: 0.6;
+     
 }
 
  .two::before {
-     border: 1px solid white;
+     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     opacity: 0.4;
+     
      z-index: -1;
      background:url('../img/dfuze.png') center center no-repeat;;
      background-size: cover;
@@ -232,18 +233,18 @@ ol li{
 }
 
  .two:hover::before {
-     opacity: 0.6;
+     
 }
 
  .three::before {
-     border: 1px solid white;
+     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     opacity: 0.4;
+     
      z-index: -1;
      background:url('../img/proppy.png') center center no-repeat;;
      background-size: cover;
@@ -251,18 +252,18 @@ ol li{
 }
 
  .three:hover::before {
-     opacity: 0.6;
+     
 }
 
  .four::before {
-     border: 1px solid white;
+     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     opacity: 0.4;
+     
      z-index: -1;
      background:url('../img/papajohns.png') center center no-repeat;;
      background-size: cover;
@@ -270,18 +271,18 @@ ol li{
 }
 
  .four:hover::before {
-     opacity: 0.6;
+     
 }
 
  .five::before {
-     border: 1px solid white;
+     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     opacity: 0.4;
+     
      z-index: -1;
      background:url('../img/VGHDashboard1Cover.png') center center no-repeat;;
      background-size: cover;
@@ -289,18 +290,18 @@ ol li{
 }
 
  .five:hover::before {
-     opacity: 0.6;
+     
 }
 
  .six::before {
-     border: 1px solid white;
+     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     opacity: 0.4;
+     
      z-index: -1;
      background:url('../img/tagd.png') center center no-repeat;;
      background-size: cover;
@@ -308,18 +309,18 @@ ol li{
 }
 
  .six:hover::before {
-     opacity: 0.6;
+     
 }
 
 .seven::before {
-  border: 1px solid white;
+  
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  
   z-index: -1;
   background:url('../img/letsgetmarketing.png') center center no-repeat;;
   background-size: cover;
@@ -327,18 +328,18 @@ ol li{
 }
 
 .seven:hover::before {
-  opacity: 0.6;
+  
 }
 
 .eight::before {
-  border: 1px solid white;
+  
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  
   z-index: -1;
   background:url('../img/PDFUtil.png') center center no-repeat;;
   background-size: cover;
@@ -346,7 +347,7 @@ ol li{
 }
 
 .eight:hover::before {
-  opacity: 0.6;
+  
 }
 
 .tag {
@@ -391,29 +392,47 @@ ol li{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1024px) {
+  h1 {
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+  
   #work{
-    margin-left:40px;
+    font-size: 1.2em;
+    margin-left:20px;
   }
 
   #logo{
-    width: 64px;
+    width: 48px;
     vertical-align: middle; 
     margin: 0px auto;
     display:block;
   }
 
   .navbar{
-    padding: 60px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
   }
 
   .tableau-wrapper{
     margin: 0 auto;
-    padding: 0 40px 100px 40px;
+    padding: 0 20px 40px 20px;
     max-width:800px;
   }
 
   .desc-img-wrapper{
-    padding: 0 40px 100px 40px;
+    padding: 0 20px 40px 20px;
+  }
+
+  .desc-text-wrapper{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 0.01ch;
+    line-height: 1.5;
+    font-size: 1em;
+    padding: 0 0px 40px 0;
   }
   
   .description {
@@ -425,8 +444,8 @@ ol li{
     height: 100%;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 80px;
-    padding: 40px;
+    grid-gap: 60px;
+    padding: 0 20px;
     background: black;
 }
 
@@ -434,7 +453,7 @@ ol li{
     display: flex;
     justify-content: left;
     align-items: flex-end;
-    padding: 100px;
+    padding: 60px;
     position: relative;
     z-index: 10;
     background-position: top left;
@@ -442,7 +461,6 @@ ol li{
     position: relative;
     color: white;
     text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .small {
@@ -475,8 +493,8 @@ ol li{
   padding: 20px 30px;
   font-weight: 900;
   letter-spacing: 0.1ch;
-  left: -100px;
-  bottom: -100px;
+  left: -70px;
+  bottom: -65px;
   position: relative;
   text-transform: uppercase;
   text-shadow: #000 1px 0 10px;

@@ -5,10 +5,14 @@
 	!-->
 	<head>
 		<title>Proppy</title>
+		<meta name="viewport" content="width=device-width">
 		<meta charset="UTF-8">
 		<meta name="author" content="Sean Johnson">
 		<link type="text/css" rel="stylesheet" href="css/normalize.css">
 		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
 		<link rel='icon' href='img/favicon.ico'>
 	</head>
 	<body class="fadeInUp-animation">
@@ -30,15 +34,21 @@
 					<img class="desc-img" src="img/proppy.png">
 				</div>
 				<div class="desc-text-wrapper">
-					<p class="description">Proppy is a GUI-less scraping application I developed in Java, HTMLUnit and SQL Server to track
-						Canadian properties for sale everyday. By using a combination of rotating residential proxies, rotating user agents and 
-						randomization I am able to scrape a couple of the most popular property sites in Canada. Every day it automatically scrapes 
-						sites between random times for all the new properties and even accounts for daylight savings time so it can run unattended.
+					<p class="description">On my portfolio website, you can learn about one of my projects called Proppy. Proppy is a unique application 
+						I developed using Java, HTMLUnit, and SQL Server. Its purpose is to track properties for sale in Canada on a daily basis, 
+						without the need for a graphical user interface.
 						<br><br>
-						In order to properly track the properties it corrects addresses to Canada Post SERP standards and checks if 
-						the property has already been added within a 3 month period before adding it. These sites did not provide properties for Manitoba and just had a few for Quebec. 
-						I'm assuming this is because they pay for each realtor groups property listings and it doesn't make 
-						sense to buy them based on their target market. Below is a Tableau dashboard I made of properties listed for sale by average price between Dec 2022 - Feb 2023. 
+						By utilizing a combination of rotating residential proxies, rotating user agents, and randomization, Proppy is able to scrape 
+						some of the most popular property sites in Canada. It scrapes sites between random times every day for all the new properties 
+						and even accounts for daylight savings time, allowing it to run unattended.
+						<br><br>
+						To ensure accurate tracking, Proppy corrects addresses to Canada Post SERP standards and checks if the property has already been 
+						added within a 3-month period before adding it. Although some sites did not provide properties for Manitoba and only had a few for 
+						Quebec, I suspect it's because they pay for each realtor group's property listings and it doesn't make sense to buy them based on 
+						their target market.
+						<br><br>
+						Below is a Tableau dashboard I created to display properties listed for sale by average price between 
+						Dec 2022 - Feb 2023. This dashboard provides a clear overview of the real estate market, it looks like I might have to move out of BC.
 					</p>
 				</div>
 				<div class="tableau-wrapper">

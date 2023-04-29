@@ -154,14 +154,8 @@ text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: normal;
 	color: #5a5b5c;
-
+	font-size: 1em;
 }
-
-
-.outer_wrapper_wrap li{
-	font-size:0.9em;
-}
-
 
 
 header .bodycopy {
@@ -371,16 +365,16 @@ header .bodycopy {
 }
 
 #logo{
-	position:fixed;
+	position:absolute;
 	left:24px;
 	top: 24px;
-	z-index:3;
+	z-index:999;
 }
 #menu{
 	position:fixed;
 	right:24px;
 	top: 24px;
-	z-index:3;
+	z-index:999;
 	background:rgb(52,54,56);
 	padding: 4px 8px;
 	border-radius:4px;
@@ -596,8 +590,122 @@ header .bodycopy {
 
 
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
+
+	#logo{
+		left:24px;
+		top: 24px;
+		width: 100px;
+	}
+	#menu{
+		position: fixed;
+		right: 24px;
+		top: 24px;
+		background: rgb(52,54,56);
+		padding: 4px 8px;
+		border-radius: 4px;
+		border: 1px solid rgb(255 255 255 / 20%);
+	}
+
+	.title {
+		font-size: 1.8em;
+		font-weight: 900;
+		letter-spacing: -0.05ch;
+		max-width: 860px;
+		margin: 40vh auto 0 auto;
+		color: #fff;
+		padding: 0 20px;
+	}
+
+	.subtitle {
+		font-size: 1.25em;
+		font-weight: 300;
+		letter-spacing: -0.06ch;
+		position: absolute;
+		bottom: 10vh;
+		left: 0;
+		right: 0;
+		color: #fff;
+	}
+
+	.inner_container {
+		display: flex;
+		width: 100%;
+		height: 40vh;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	.outer_wrapper {
+		max-width: 768px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 0 20px;
+	}
+
+	.left_tilt {
+		zoom: 0.55;
+		transform: none;
+		bottom: -100px;
+		position: relative;
+	}
+
+	.right_tilt {
+		zoom: 0.55;
+		transform: none;
+		bottom: -75px;
+		position: relative;
+	}
+
+	.text_container {
+		max-width: 350px;
+		text-align: center;
+	}
+
+	.reverse {
+		display: flex;
+   		flex-direction: column-reverse;
+	}
+
+	.inner_reverse{
+		display: flex;
+		width: 100%;
+		height: 40vh;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 0;
+		flex-wrap: nowrap;
+		align-content: space-between;
+		justify-content: flex-start;
+	}
+
+	.doc_video{
+		width: 100%;
+	}
+
+	.container .outer_wrapper_wrap {
+		padding: 80px 30px;
+	}
+
+	.bodytitle{
+		margin: 0 0 20px 0;
+		padding: 0 20px 0 0;
+		line-height: 1;
+	}
+
+	.bodycopy {
+		font-size: 0.9em;
+		padding: 0 20px 0 0;
+	}
+
+	header .bodycopy {
+		padding: 0 40px;
+	}
+
 
 .timeline_container{
 	width: initial;

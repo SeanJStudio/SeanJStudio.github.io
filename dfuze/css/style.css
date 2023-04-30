@@ -156,6 +156,8 @@ text-transform: uppercase;
 	letter-spacing: normal;
 	color: #5a5b5c;
 	font-size: 1em;
+	letter-spacing: -0.02ch;
+    line-height: 1.8em;
 }
 
 
@@ -541,7 +543,7 @@ header .bodycopy {
 
 /* Place the container to the left */
 .left {
-  left: -217px;
+	right: 50%;
 }
 
 /* Place the container to the right */
@@ -652,14 +654,14 @@ header .bodycopy {
 	}
 
 	.left_tilt {
-		zoom: 0.5;
+		zoom: 0.4;
 		transform: none;
 		bottom: -75px;
 		position: relative;
 	}
 
 	.right_tilt {
-		zoom: 0.5;
+		zoom: 0.4;
 		transform: none;
 		bottom: -50px;
 		position: relative;

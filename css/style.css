@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@700&display=swap');
+
 ::selection {
    color: rgb(0, 0, 0);
    background: white;
@@ -10,7 +12,7 @@
 }
 
  body {
-     font-family: Inter;
+     font-family: 'Inter', sans-serif;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
      text-rendering: optimizeLegibility;
@@ -30,8 +32,10 @@ main {
 }
 
 h1{
+  font-family: 'Tomorrow', sans-serif;
   margin: 0;
-  font-size:2em;
+  font-size:2.6em;
+  line-height: 1.5;
 }
 
 hr{
@@ -58,21 +62,23 @@ a {
   padding:0;
   margin-left: 60px;
   display: block;
-  color: #979797;
+  color: #878787;
   font-weight: 900;
   font-size: 1.6em;
-  letter-spacing: -0.06ch;
+  font-family: 'Tomorrow', sans-serif;
 }
 
 
 .desc-text-wrapper{
   max-width: 800px;
   margin: 0 auto;
-  text-align: left;
-  letter-spacing: 0.01ch;
-  line-height: 1.6;
-  font-size: 1.25em;
   padding: 0 0px 40px 0;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.02ch;
+  line-height: 1.8em;
+  color: #dddddd;
 }
 
 ol li{
@@ -95,7 +101,7 @@ ol li{
 
 .desc-img{
   width: 100%;
-  border: 1px solid white;
+  
 }
 
 .desc-img:not(:first-child):not(:last-child) {
@@ -115,7 +121,7 @@ ol li{
 }
 
  .block {
-     padding: 20vh 0 10vh 0;
+     padding: 20vh 0 20vh 0;
      background: black;
 }
 
@@ -158,8 +164,6 @@ ol li{
      position: relative;
      color: white;
      text-decoration: none;
-     border: 1px solid white;
-
 }
 
 .portfolio-item:hover {
@@ -198,15 +202,14 @@ ol li{
      grid-column: span 3;
 }
 
- .one::before {
-     
+ .one::before { 
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     
+     opacity: 0.5;
      z-index: -1;
      background:url('../img/UGMfold3.png') center center no-repeat;;
      background-size: cover;
@@ -214,18 +217,17 @@ ol li{
 }
 
  .one:hover::before {
-     
+  opacity: 1;
 }
 
- .two::before {
-     
+ .two::before { 
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     
+     opacity: 0.5;
      z-index: -1;
      background:url('../img/dfuze.png') center center no-repeat;;
      background-size: cover;
@@ -233,18 +235,17 @@ ol li{
 }
 
  .two:hover::before {
-     
+  opacity: 1;
 }
 
  .three::before {
-     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     
+     opacity: 0.5;
      z-index: -1;
      background:url('../img/proppy.png') center center no-repeat;;
      background-size: cover;
@@ -252,37 +253,35 @@ ol li{
 }
 
  .three:hover::before {
-     
+  opacity: 1;
 }
 
  .four::before {
-     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     
+     opacity: 0.5;
      z-index: -1;
-     background:url('../img/papajohns.png') center center no-repeat;;
+     background:url('../img/PDFUtil.png') center center no-repeat;;
      background-size: cover;
      transition: all ease-in-out 300ms;
 }
 
  .four:hover::before {
-     
+  opacity: 1;
 }
 
  .five::before {
-     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     
+     opacity: 0.5;
      z-index: -1;
      background:url('../img/VGHDashboard1Cover.png') center center no-repeat;;
      background-size: cover;
@@ -290,45 +289,43 @@ ol li{
 }
 
  .five:hover::before {
-     
+  opacity: 1;
 }
 
  .six::before {
-     
      content: "";
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
-     
+     opacity: 0.5;
      z-index: -1;
-     background:url('../img/tagd.png') center center no-repeat;;
+     background:url('../img/letsgetmarketing.png') center center no-repeat;;
      background-size: cover;
      transition: all ease-in-out 300ms;
 }
 
  .six:hover::before {
-     
+  opacity: 1;
 }
 
 .seven::before {
-  
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  
+  opacity: 0.5;
   z-index: -1;
-  background:url('../img/letsgetmarketing.png') center center no-repeat;;
+  background:url('../img/papajohns.png') center center no-repeat;;
   background-size: cover;
   transition: all ease-in-out 300ms;
 }
 
 .seven:hover::before {
-  
+  opacity: 1;
 }
 
 .eight::before {
@@ -339,18 +336,19 @@ ol li{
   left: 0;
   width: 100%;
   height: 100%;
-  
+  opacity: 0.5;
   z-index: -1;
-  background:url('../img/PDFUtil.png') center center no-repeat;;
+  background:url('../img/tagd.png') center center no-repeat;;
   background-size: cover;
   transition: all ease-in-out 300ms;
 }
 
 .eight:hover::before {
-  
+  opacity: 1;
 }
 
 .tag {
+  font-family: 'Tomorrow', sans-serif;
   font-size: 12px;
   padding: 20px 20px;
   font-weight: 900;
@@ -394,18 +392,18 @@ ol li{
 @media only screen and (max-width: 1024px) {
   h1 {
     margin: 0;
-    font-size: 1.4em;
+    font-size: 1.8em;
     line-height: 1.4;
     letter-spacing: 0;
   }
   
   #work{
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-left:20px;
   }
 
   #logo{
-    width: 48px;
+    width: 64px;
     vertical-align: middle; 
     margin: 0px auto;
     display:block;
@@ -429,8 +427,7 @@ ol li{
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    letter-spacing: 0.01ch;
-    line-height: 1.5;
+    letter-spacing: -0.01ch;
     font-size: 1em;
     padding: 0 0px 40px 0;
   }
@@ -444,7 +441,7 @@ ol li{
     height: 100%;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 60px;
+    grid-gap: 40px;
     padding: 0 20px;
     background: black;
 }

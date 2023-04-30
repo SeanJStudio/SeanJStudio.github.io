@@ -3,6 +3,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@700&display=swap');
 
 *{
 font-family: 'Inter', sans-serif;
@@ -31,7 +32,7 @@ header{
 
 hr{
 	border:0;
-	border-bottom:24px solid rgb(255 255 255);
+	border-bottom:8px solid rgb(255 255 255);
 }
 
 .outer_wrapper_wrap li:not(:last-child), .outer_wrapper_wrap li p {
@@ -129,8 +130,9 @@ text-transform: uppercase;
 }
 
 .title{
+	font-family: 'Tomorrow', sans-serif;
 	font-size: 3em;
-	font-weight: 900;
+	font-weight: 700;
 	letter-spacing: -0.05ch;
 	max-width:860px;
 	margin:40vh auto 0 auto;
@@ -163,6 +165,7 @@ header .bodycopy {
 }
 
 .bodytitle{
+	font-family: 'Tomorrow', sans-serif;
 	font-size: 2em;
 	line-height:2.5em;
 	font-weight: 900;
@@ -367,13 +370,13 @@ header .bodycopy {
 	position:absolute;
 	left:24px;
 	top: 24px;
-	z-index:999;
+	z-index:990;
 }
 #menu{
 	position:fixed;
 	right:24px;
 	top: 24px;
-	z-index:999;
+	z-index:990;
 	background:rgb(52,54,56);
 	padding: 4px 8px;
 	border-radius:4px;
@@ -434,13 +437,14 @@ header .bodycopy {
 /* The navigation links inside the overlay */
 .overlay a {
 	padding: 8px;font-size: 3.5em;
-	font-weight: 900;
+	font-weight: 700;
 	letter-spacing: -0.06ch;
 	text-decoration: none;
 	font-size: 36px;
 	color: rgb(150,152,154);
 	display: block;
 	transition: 0.3s;
+	font-family: 'Tomorrow', sans-serif;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -453,6 +457,7 @@ header .bodycopy {
 	top: -14px;
 	right: 18px;
 	font-size: 60px;
+	z-index:991;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -630,7 +635,7 @@ header .bodycopy {
 	.inner_container {
 		display: flex;
 		width: 100%;
-		height: 40vh;
+		height: 30vh;
 		flex-direction: column;
 		align-items: center;
 		padding: 20px 0;
@@ -647,16 +652,16 @@ header .bodycopy {
 	}
 
 	.left_tilt {
-		zoom: 0.55;
+		zoom: 0.5;
 		transform: none;
-		bottom: -100px;
+		bottom: -75px;
 		position: relative;
 	}
 
 	.right_tilt {
-		zoom: 0.55;
+		zoom: 0.5;
 		transform: none;
-		bottom: -75px;
+		bottom: -50px;
 		position: relative;
 	}
 
@@ -673,7 +678,6 @@ header .bodycopy {
 	.inner_reverse{
 		display: flex;
 		width: 100%;
-		height: 40vh;
 		flex-direction: column;
 		align-items: center;
 		padding: 20px 0;

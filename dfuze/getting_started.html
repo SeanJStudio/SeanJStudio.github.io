@@ -67,9 +67,14 @@
 					<li><p class="bodycopy">Make a selection from the Client dropdown, then another selection from the Job dropdown. Once a Job is chosen you will
 						see information displayed on the right.
 					</p></li>
-					<li><p class="bodycopy">Click the "Load Data" button to import your data. Hold <span class="shortcut">CTRL</span> or <span class="shortcut">SHIFT</span> to merge multiple files. The file types .accdb, .cert-1, .csv, .dat, .dbf, .mdb, .txt, .xls, .xlsm, and .xlsx are supported.</p></li>
-					<li><p class="bodycopy">Next you must map any required fields from the data by dragging the fields on the left to the required fields on the right. Dfuze will automatically try to map fields but you should verify it was done correctly. Press left and right on your keyboard to preview record data.</p>
-					<p class="bodycopy">You can merge fields together into a new field by holding <span class="shortcut">CTRL</span> and selecting multiple fields on the right and pressing the "Merge New Field" button.</p>
+					<li><p class="bodycopy">Click the "Load Data" button to import your data. The location of the last file Dfuze interacted with will open for ease of use. Hold 
+					<span class="shortcut">CTRL</span> or <span class="shortcut">SHIFT</span> to merge multiple files. The file types .accdb, .cert-1, .csv, .dat, .dbf, .mdb, .txt, .xls, .xlsm, and .xlsx 
+					are supported. Text based files will be automatically encoded and any BOM markers will be removed.</p></li>
+					<li><p class="bodycopy">Next you must map any required fields from the data to the required fields. Dfuze automatically maps most required fields but you should verify it was done 
+					correctly, pressing right/left on your keyboard to preview record data can help with this. If fields arent automatically mapped you must drag the fields on the left to the required
+					fields on the right.</p>
+					<p class="bodycopy">You can merge fields together into a new field by holding <span class="shortcut">CTRL</span> and selecting multiple fields on the left and pressing the 
+					"Merge New Field" button.</p>
 					<p class="bodycopy">Checking the "Remember fields used for this job" box will save the fields used for future use if available.</p></li>
 					<li><p class="bodycopy">Once mapped, click Job ➜ Run or press <span class="shortcut">R</span> to run the Job.</p></li>
 				
@@ -113,8 +118,8 @@
 					Here you can customize how matches are made, choose your name fields, prioritize records, view/modify/export/delete dupes.
 					</p></li>
 					<li><p class="bodycopy">After choosing your settings click run to start. The dedupe works by 
-					normalizing the address fields by fixing errors, converting accents, changing spelling of hundreds of components to be the same, parsing out various components, 
-					removing vowels and comparing the final parts to find enough of a match.</p>
+					normalizing the address fields by fixing errors, converting accents, converting numbers to words, changing spelling of hundreds of components to be the same in multiple languages, 
+					parsing out various components, removing vowels and comparing the final parts to find enough of a match.</p>
 					<p class="bodycopy">When a name is selected it is compared by removing hundreds of prefixes/suffixes, converting accents, parsing multiple names into different components, 
 					going through 4 string matching algorithms (Jaro Wrinkler, NYSIIS, Metaphone3, Refined Soundex), comparing initials, comparing reversed names and more!</p></li>
 					<li><p class="bodycopy">Once the dedupe finishes its a good idea to click the view button to view the dupes and make any necessary modifications. If
@@ -165,7 +170,7 @@
 					<li><p class="bodycopy">Here you can type a regex pattern that will be searched against the entire database with only the matched records returned and their 
 					matched parts highlighted in yellow.
 					</p></li>
-					<li><p class="bodycopy">If you are unfamiliar with regex patterns, check out this <a href="https://www.freeformatter.com/java-regex-tester.html#documentation">site</a>.</p></li>
+					<li><p class="bodycopy">If you are unfamiliar with regex patterns, check out this <a href="https://www.freeformatter.com/java-regex-tester.html#documentation" target="_blank">site</a>.</p></li>
 					<li><p class="bodycopy">If you want to export the data, select the rows you want and click "Export Selected Rows"</p>
 					</li></ol>
 				
